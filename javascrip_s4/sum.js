@@ -1,8 +1,7 @@
-function suma () {
-    while (suma < 10)
-    suma = suma ++;
-
+function suma(positivo) {
+    return ((positivo*(positivo+1))/2);
 }
+
 
 console.log(suma(4)) // 1 + 2 + 3 + 4 = 10
 console.log(suma(10)) // 55
