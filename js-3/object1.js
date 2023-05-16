@@ -13,7 +13,7 @@ delete pedro.activo;
 
 for (let llave in pedro) {
     if (pedro.hasOwnProperty(llave)) {
-        console.log(pedro[llave])
+        //console.log(pedro[llave])
     }
 }
 
@@ -22,8 +22,8 @@ for (let llave in pedro) {
     console.log("Estatura: " + pedro.estatura);
     console.log("Hobbies: " + pedro.hobbies.join(", "));
 
-    saluda: function () {
-    console.log("Hola, me llamo " + pedro.nombre);
-}
+    pedro.saluda = function() {
+        console.log("Hola, me llamo " + this.nombre);
+    }
 
-saluda();
+    pedro.saluda();
